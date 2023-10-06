@@ -65,3 +65,27 @@ php artisan crud:migration posts --schema="title#string; body#text"
 ['pk': 'The name of the primary key'],
 ['soft-deletes': 'Include soft deletes fields'],
 ```
+**Migration Field Types:**
+- string
+- char
+- varchar
+- date
+- datetime
+- time
+- timestamp
+- text
+- mediumtext
+- longtext
+- json
+- jsonb
+- binary
+- integer
+- bigint
+- mediumint
+- tinyint
+- smallint
+- boolean
+- decimal
+- double
+- float
+- enum
