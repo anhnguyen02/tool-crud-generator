@@ -3,7 +3,6 @@
     "description": "Laravel CRUD code generation support package.",
     "type": "library",
     "license": "MIT",
-    "version": "1.0.0",
     "authors": [
         {
             "name": "Anh Nguyen",
