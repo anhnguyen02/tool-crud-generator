@@ -1,0 +1,9 @@
+Route::group([
+    'prefix' => '{{prefix}}'
+], function () {
+    Route::get('/', [{{controller}}::class, 'index']);
+    Route::post('store', [{{controller}}::class, 'store']);
+    Route::get('{id}/show', [{{controller}}::class, 'show']);
+    Route::post('{id}/update', [{{controller}}::class, 'update']);
+    Route::delete('{id}/destroy', [{{controller}}::class, 'destroy']);
+}){{middleware}};

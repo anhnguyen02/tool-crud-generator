@@ -1,0 +1,12 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Database\Eloquent\Model;
+{{useSoftDeletes}}
+{{useHasUuids}}
+
+class DummyClass extends Model
+{{{softDeletes}}{{hasUuids}}{{primaryKey}}{{fillable}}
+    {{relationships}}
+}
