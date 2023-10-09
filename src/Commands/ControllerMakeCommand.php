@@ -174,9 +174,9 @@ class ControllerMakeCommand extends GeneratorCommand
         {
             $useSoftDeletes = confirm('Enable soft deletes for a model?');
             $useUuids = confirm('Use a UUID key instead of an auto-incrementing integer key?');
-            $fillable = $this->ask('The names of the fillable columns (Enter to skip):', "['title', 'body']");
-            $pk = $this->ask('The name of the primary key (Enter to skip):', "id");
-            $relationships = $this->ask('The relationships for the model (Enter to skip):', 'comments#hasMany#App\Comment|id|comment_id;user#belongsTo#App\User|id|user_id');
+            $fillable = $this->ask('The names of the fillable columns (Enter to skip):');
+            $pk = $this->ask('The name of the primary key (Enter to skip):');
+            $relationships = $this->ask('The relationships for the model (Enter to skip):');
 
             $options = [
                 'name' => $modelClass,
